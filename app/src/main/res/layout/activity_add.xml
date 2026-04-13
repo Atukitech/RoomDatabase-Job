@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/sky"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="8dp"
+        android:text="Add Information"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!-- START-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:elevation="50dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintEnd_toEndOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        >
+        <EditText
+            android:id="@+id/nameET"
+            android:hint="Enter your name"
+            android:padding="8dp"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/card"
+            app:layout_constraintEnd_toEndOf="@id/card"
+            app:layout_constraintTop_toBottomOf="@id/card"/>
+        <EditText
+            android:id="@+id/addressET"
+            android:hint="Enter your Address"
+            android:padding="8dp"
+            android:layout_marginTop="70dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/nameET"
+            app:layout_constraintEnd_toEndOf="@id/nameET"
+            app:layout_constraintTop_toBottomOf="@id/nameET"/>
+        <EditText
+            android:id="@+id/phoneET"
+            android:hint="Enter your Phone"
+            android:padding="8dp"
+            android:layout_marginTop="120dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/addressET"
+            app:layout_constraintEnd_toEndOf="@id/addressET"
+            app:layout_constraintTop_toBottomOf="@id/addressET"/>
+        <!-- SAVE BUTTON -->
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="200dp"
+            android:elevation="50dp"
+            app:cardElevation="60dp"
+            app:cardBackgroundColor="@color/skydeep"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            >
+            <TextView
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textSize="20sp"
+
+                />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- FINISH -->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

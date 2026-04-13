@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        app:cardBackgroundColor="@color/sky">
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:padding="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:padding="8dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="60dp"
+            />
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:padding="8dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="100dp"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="160dp"
+            android:padding="8dp"
+            android:weightSum="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_weight=".5"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/skydeep"
+                android:id="@+id/editBtn"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"/>
+            <Button
+                android:textColor="@color/white"
+                android:backgroundTint="@color/skydeep"
+                android:id="@+id/deleteBtn"
+                android:textSize="18sp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_weight=".5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>
